@@ -9,7 +9,7 @@ export default function (options?: Record<string, any>): AstroIntegration {
             "astro:config:setup": ({ injectScript }) => {
                 injectScript(
                     `page`,
-                    `import { addListeners } from "astro-garden/client.js"; addListeners(${options});`
+                    `import { seedLinks } from "astro-garden/client.js"; seedLinks(${options});`
                 );
             }
         }

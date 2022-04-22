@@ -8,7 +8,7 @@ const isSeedLink = (element, includeUrl) => {
     return element.nodeName == 'A' && true || (element.href && element.href.includes(includeUrl));
 }
 
-export const addListeners = (includeUrl) => {
+export const seedLinks = (includeUrl) => {
     const links = document.querySelector('section');
     links.addEventListener('mouseover', async (event) => {
         if (isSeedLink(event.target, includeUrl)) {

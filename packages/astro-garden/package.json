@@ -1,20 +1,14 @@
 {
   "name": "astro-garden",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./index.js",
-    "./Button": "./Button.astro",
-    "./Heading": "./Heading.astro",
-    "./SeedPreview": "./SeedPreview.vue",
-    "./SeedLayout": "./SeedLayout.astro",
+    ".": "./integration/index.ts",
     "./SeedLinks": "./integration/index.ts"
   },
   "files": [
-    "index.js",
-    "Button.astro",
-    "Heading.jsx"
+    "integrations/index.ts"
   ],
   "keywords": [
     "astro-component",
@@ -24,5 +18,13 @@
   ],
   "dependencies": {
     "tippy.js": "^6.3.7"
-  }
+  },
+  "description": "This is an example package, exported as `@example/my-component`. It consists of two Astro components, **Button** and **Heading**.",
+  "main": "client.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesus Guerrero <jesusant.guerrero@gmail.com>",
+  "license": "MIT"
 }

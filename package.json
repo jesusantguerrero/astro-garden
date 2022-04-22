@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "astro --root demo dev",
-    "build": "astro --root demo build",
+    "build": "astro --root packages/astro-garden build",
     "serve": "astro --root demo preview"
   },
   "devDependencies": {

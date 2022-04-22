@@ -4,9 +4,10 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./integration/index.js",
+    ".": "./index.js",
     "./SeedLinks": "./integration/index.js",
-    "./client.js": "./client.js"
+    "./client.js": "./client.js",
+    "./BackLinks": "./components/BackLinks.astro"
   },
   "files": [
     "integrations/index.ts"
@@ -21,7 +22,7 @@
     "tippy.js": "^6.3.7"
   },
   "description": "This is an example package, exported as `@example/my-component`. It consists of two Astro components, **Button** and **Heading**.",
-  "main": "client.js",
+  "main": "index.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

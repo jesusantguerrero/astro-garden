@@ -1,6 +1,6 @@
 {
   "name": "astro-garden",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "astro --root demo dev",
@@ -18,5 +18,10 @@
     "tippy.js": "^6.3.7",
     "vite": "2.9",
     "vue": "3.2.32"
+  },
+  "standard-version": {
+    "scripts": {
+      "prerelease": "git add ."
+    }
   }
 }

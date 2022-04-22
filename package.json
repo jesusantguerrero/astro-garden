@@ -1,13 +1,13 @@
 {
   "name": "astro-garden",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "scripts": {
     "start": "astro --root demo dev",
     "build": "astro --root packages/astro-garden build",
     "serve": "astro --root demo preview",
     "changelog:add": "changeset add",
-    "release": "standard-version"
+    "release": "standard-version -a"
   },
   "devDependencies": {
     "@changesets/cli": "^2.22.0",

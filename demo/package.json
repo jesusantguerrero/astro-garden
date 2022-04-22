@@ -1,5 +1,5 @@
 {
-  "name": "@freesgen/astro-garden-demo",
+  "name": "astro-garden-demo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -9,7 +9,9 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@freesgen/astro-garden": "workspace:*",
-    "astro": "^1.0.0-beta.12"
+    "@astrojs/tailwind": "^0.2.0",
+    "astro-garden": "workspace:*",
+    "astro": "^1.0.0-beta.12",
+    "@astrojs/vue": "^0.1.1"
   }
 }

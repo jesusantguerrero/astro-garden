@@ -1,5 +1,6 @@
 ---
-import { Button, Heading, SeedPreview, SeedLayout } from 'astro-garden';
+import { Button, Heading } from 'astro-garden';
+import SeedPeeview from 'astro-garden/SeedPreview.astro';
 ---
 
 <html lang="en">
@@ -20,11 +21,5 @@ import { Button, Heading, SeedPreview, SeedLayout } from 'astro-garden';
 	<body>
 		<Heading>Welcome to Astro</Heading>
 		<Button>Plain Button</Button>
-		<SeedLayout>
-			<section>
-				<a href="/garden/seeds">Hola hermoso mundo</a>
-				<SeedPreview client:load />
-			</section>
-		</SeedLayout>
 	</body>
 </html>

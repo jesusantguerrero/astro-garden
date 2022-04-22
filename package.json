@@ -1,5 +1,5 @@
 {
-  "name": "@freesgen/astro-garden",
+  "name": "astro-garden",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -11,6 +11,8 @@
     "astro": "^1.0.0-beta.12"
   },
   "dependencies": {
-    "tippy.js": "^6.3.7"
+    "tippy.js": "^6.3.7",
+    "vite": "2.9",
+    "vue": "3.2.32"
   }
 }

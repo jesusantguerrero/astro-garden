@@ -1,12 +1,15 @@
 {
-  "name": "@freesgen/astro-garden",
+  "name": "astro-garden",
   "version": "0.0.1",
   "private": true,
   "type": "module",
   "exports": {
     ".": "./index.js",
     "./Button": "./Button.astro",
-    "./Heading": "./Heading.astro"
+    "./Heading": "./Heading.astro",
+    "./SeedPreview": "./SeedPreview.vue",
+    "./SeedLayout": "./SeedLayout.astro",
+    "./SeedLinks": "./integration/index.ts"
   },
   "files": [
     "index.js",
@@ -18,5 +21,8 @@
     "button",
     "heading",
     "example"
-  ]
+  ],
+  "dependencies": {
+    "tippy.js": "^6.3.7"
+  }
 }

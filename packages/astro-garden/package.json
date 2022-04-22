@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "exports": {
-    ".": "./integration/index.ts",
-    "./SeedLinks": "./integration/index.ts"
+    ".": "./integration/index.js",
+    "./SeedLinks": "./integration/index.js",
+    "./client.js": "./client.js"
   },
   "files": [
     "integrations/index.ts"

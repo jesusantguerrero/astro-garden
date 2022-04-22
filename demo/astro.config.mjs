@@ -4,5 +4,5 @@ import tailwind from "@astrojs/tailwind";
 import seedLinks from "astro-garden";
 // https://astro.build/config
 export default defineConfig({
-  integrations: [vue(), tailwind(), seedLinks()],
+  integrations: [vue(), tailwind(), seedLinks('seeds')],
 });

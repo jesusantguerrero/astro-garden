@@ -1,14 +1,18 @@
 {
   "name": "astro-garden",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "scripts": {
     "start": "astro --root demo dev",
     "build": "astro --root packages/astro-garden build",
-    "serve": "astro --root demo preview"
+    "serve": "astro --root demo preview",
+    "changelog:add": "changeset add",
+    "release": "standard-version"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.12"
+    "@changesets/cli": "^2.22.0",
+    "astro": "^1.0.0-beta.12",
+    "standard-version": "^9.3.2"
   },
   "dependencies": {
     "tippy.js": "^6.3.7",

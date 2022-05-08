@@ -1,0 +1,26 @@
+---
+import gardenConfig from "../../garden.config.mjs";
+import { getBackLinks } from "../utils/index.ts";
+const { pageTitle, seedPath, seedUrl, backlinkTitle } = Astro.props;
+
+const allSeeds = import.meta.glob(`../pages/garden/seeds/*.md`)
+const seeds = await getBackLinks(allSeeds, {
+  pageTitle,
+  seedPath,
+  seedUrl,
+})
+---
+
+<div class="garden__backlinks-container">
+	{ !seeds.length ? null : <div class="mt-5">
+		<h2 class="mb-1 text-xl font-bold text-gray-400">{ backlinkTitle || 'Backlinks' }</h2>
+		<ul class="list-disc list-inside">
+			{seeds.map(seed => {
+				return <li class="mb-2">
+					<a href={`${gardenConfig.seedUrl}/${seed.slug}`} class="text-accent-400">{seed.title}</a>
+				</li>
+			})}
+		</ul>
+	</div>
+	}
+</div>	

@@ -1,11 +1,12 @@
 ---
+	import gardenConfig from "../../garden.config.mjs";
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title>Welcome to Astro</title>
+		<title>{ gardenConfig.siteTitle }</title>
 		<style is:global>
 			h {
 				display: block;

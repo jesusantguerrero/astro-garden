@@ -1,8 +1,9 @@
 ---
-import { BackLinks } from "astro-garden";
+import BackLinks from "../components/BackLinks.astro";
 const { content } = Astro.props;
 const pageTitle = `${content.title} - Jesus Guerrero`
 const pageDescription = `${content.description}`
+const seedPath = "./../pages/garden/seeds"
 ---
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@ const pageDescription = `${content.description}`
     <meta name="description" content={pageDescription}>
 </head>
 <body>
-    <main>
+    <main class="px-5">
         <article class="px-5 md:px-0 py-20 mx-auto overflow-visible prose">
             <h1 class="seed-title font-bold text-gray">
               <span> Seeds: {content.title } </span>
@@ -32,13 +33,18 @@ const pageDescription = `${content.description}`
             </div>
             <section class="seed-article">
                 <slot />
-                <BackLinks client:load pageTitle={content.title} seedPath="../pages/garden/seeds" seedUrl="garden/seeds" backlinkTitle="Mentioned In" />
+                <BackLinks
+                  pageTitle={content.title} 
+                  seedPath={seedPath}
+                  seedUrl="garden/seeds" 
+                  backlinkTitle="Mentioned In" 
+              />
             </section>
         </article>
+      <footer class="seed-footer">
+          <div >2021 Made with <span class="font-bold text-accent">code</span> by <span class="font-bold underline">Jesus Guerrero</span></div>
+      </footer>
     </main>
-    <footer class="seed-footer">
-        <div >2021 Made with <span class="font-bold text-accent">code</span> by <span class="font-bold underline">Jesus Guerrero</span></div>
-    </footer>
 </body>
 </html>
 <style is:global>

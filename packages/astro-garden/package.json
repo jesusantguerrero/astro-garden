@@ -5,18 +5,15 @@
   "type": "module",
   "exports": {
     ".": "./index.js",
-    "./SeedLinks": "./integration/index.js",
     "./client.js": "./client.js",
-    "./BackLinks": "./components/BackLinks.astro"
+    "./astro": "./components/BackLinks.astro"
   },
   "files": [
-    "integrations/index.ts"
+    "integrations/index.ts",
+    "./components/BackLinks.astro"
   ],
   "keywords": [
-    "astro-component",
-    "button",
-    "heading",
-    "example"
+    "astro-component"
   ],
   "dependencies": {
     "tippy.js": "^6.3.7"
